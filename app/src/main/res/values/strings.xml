@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TreeTrack</string>
+    <string name="add_tree" />
+    <string name="no_trees_image_desc">No trees image</string>
+
+    <string-array name="health_filter_options">
+        <item>All</item>
+        <item>Excellent</item>
+        <item>Good</item>
+        <item>Moderate</item>
+        <item>Poor</item>
+        <item>Critical</item>
+    </string-array>
+</resources>

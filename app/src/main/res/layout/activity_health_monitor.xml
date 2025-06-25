@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#F1F8E9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvHealthMonitorTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🩺 Health Monitor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:gravity="center"
+        android:paddingVertical="16dp"
+        android:background="#DCEDC8" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Empty State -->
+        <LinearLayout
+            android:id="@+id/emptyStateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="32dp">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/ic_empty_trees"
+                android:scaleType="fitCenter"
+                android:contentDescription="No Trees" />
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:text="There are no trees yet"
+                android:textSize="18sp"
+                android:textColor="#777"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Tree List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHealthTrees"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:clipToPadding="false"
+            android:visibility="visible" />
+
+        <!-- Health Monitor -->
+        <ScrollView
+            android:id="@+id/healthMonitorContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvHealthHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tree Health Monitor"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#1B5E20"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tree Health:" />
+
+                <SeekBar
+                    android:id="@+id/seekBarHealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/tvHealthValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%" />
+
+                <TextView
+                    android:id="@+id/tvHealthStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Health Status"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Button Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp">
+
+                    <Button
+                        android:id="@+id/btnHealthCamera"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Camera"
+                        android:background="@drawable/rounded_button"
+                        android:textColor="#FFFFFF" />
+
+                    <Button
+                        android:id="@+id/btnHealthGallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gallery"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/rounded_button"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivHealthThumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="12dp"
+                    android:scaleType="fitCenter"
+                    android:background="#DDDDDD" />
+
+                <!-- Upload and Last Check Info -->
+                <TextView
+                    android:id="@+id/tvLastCheckDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Check: N/A"
+                    android:layout_marginTop="12dp" />
+
+                <TextView
+                    android:id="@+id/tvUploadTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Time: N/A" />
+
+                <!-- Delete Image Button -->
+                <Button
+                    android:id="@+id/btnDeleteImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🗑️ Delete Image"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="#FFFFFF" />
+
+                <!-- Update Button -->
+                <Button
+                    android:id="@+id/btnUpdateHealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="✅ Update Health"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

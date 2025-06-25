@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "157267423693",
+    "project_id": "treetrack-931db",
+    "storage_bucket": "treetrack-931db.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157267423693:android:c1c3e95b53effa5f821484",
+        "android_client_info": {
+          "package_name": "com.example.treetrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVfiBUFNCTl3Hln0ymRv5DajPxIlfTO8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

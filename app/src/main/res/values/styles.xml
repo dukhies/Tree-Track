@@ -1,0 +1,44 @@
+<resources>
+    <!-- Dashboard square button style -->
+    <style name="DashboardButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">@drawable/square_button</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!---->
+    <style name="ModernDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!-- res/values/styles.xml -->+
+
+    <style name="ModernDashboardButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:backgroundTint">@color/pastel_orange</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ModernDashboardButton.Small" parent="ModernDashboardButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:minWidth">120dp</item>
+    </style>
+
+
+
+</resources>
+
+
+
+

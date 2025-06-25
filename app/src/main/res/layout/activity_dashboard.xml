@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboardactivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/outline_blue"
+    android:padding="16dp"
+    tools:context=".DashboardActivity">
+
+    <!-- Button Group -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnTrackTrees"
+            style="@style/DashboardButtonStyle"
+            android:text="Track Trees" />
+
+        <Button
+            android:id="@+id/btnMyTrees"
+            style="@style/DashboardButtonStyle"
+            android:text="My Trees" />
+
+        <Button
+            android:id="@+id/btnHealthMonitor"
+            style="@style/DashboardButtonStyle"
+            android:text="Health Monitor" />
+
+        <Button
+            android:id="@+id/btnReports"
+            style="@style/DashboardButtonStyle"
+            android:text="Reports" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            style="@style/DashboardButtonStyle"
+            android:text="Settings"
+            android:drawableStart="@android:drawable/ic_menu_preferences"
+            android:drawablePadding="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical|start"
+            android:layout_marginTop="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            />
+
+    </LinearLayout>
+
+    <!-- Settings Gear Button -->
+</androidx.constraintlayout.widget.ConstraintLayout>

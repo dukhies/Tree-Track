@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/dashboard_bg.xml -->
+<gradient xmlns:android="http://schemas.android.com/apk/res/android"
+    android:angle="45"
+    android:startColor="#FFE0B2"
+    android:endColor="#FFF3E0"
+    android:type="linear" />
